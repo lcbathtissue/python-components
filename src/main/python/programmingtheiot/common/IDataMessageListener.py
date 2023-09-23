@@ -7,13 +7,13 @@
 # Copyright (c) 2020 by Andrew D. King
 # 
 
-from programmingtheiot.common.ResourceNameEnum import ResourceNameEnum
+from src.main.python.programmingtheiot.common.ResourceNameEnum import ResourceNameEnum
 
-from programmingtheiot.data.ActuatorData import ActuatorData
-from programmingtheiot.data.SensorData import SensorData
-from programmingtheiot.data.SystemPerformanceData import SystemPerformanceData
-from programmingtheiot.common.ITelemetryDataListener import ITelemetryDataListener
-from programmingtheiot.common.ISystemPerformanceDataListener import ISystemPerformanceDataListener
+from src.main.python.programmingtheiot.data.ActuatorData import ActuatorData
+from src.main.python.programmingtheiot.data.SensorData import SensorData
+from src.main.python.programmingtheiot.data.SystemPerformanceData import SystemPerformanceData
+from src.main.python.programmingtheiot.common.ITelemetryDataListener import ITelemetryDataListener
+from src.main.python.programmingtheiot.common.ISystemPerformanceDataListener import ISystemPerformanceDataListener
 
 class IDataMessageListener():
 	"""

@@ -7,7 +7,7 @@
 # Copyright (c) 2020 by Andrew D. King
 # 
 
-from programmingtheiot.data.SensorData import SensorData
+from src.main.python.programmingtheiot.data.SensorData import SensorData
 
 class ITelemetryDataListener():
 	"""

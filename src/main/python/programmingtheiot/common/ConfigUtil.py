@@ -14,9 +14,9 @@ import traceback
 
 from pathlib import Path
 
-from programmingtheiot.common.Singleton import Singleton
+from src.main.python.programmingtheiot.common.Singleton import Singleton
 
-import programmingtheiot.common.ConfigConst as ConfigConst
+import src.main.python.programmingtheiot.common.ConfigConst as ConfigConst
 
 class ConfigUtil(metaclass = Singleton):
 	"""

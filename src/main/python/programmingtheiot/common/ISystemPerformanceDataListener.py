@@ -7,7 +7,7 @@
 # Copyright (c) 2020 by Andrew D. King
 # 
 
-from programmingtheiot.data.SystemPerformanceData import SystemPerformanceData
+from src.main.python.programmingtheiot.data.SystemPerformanceData import SystemPerformanceData
 
 class ISystemPerformanceDataListener():
 	"""

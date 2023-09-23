@@ -9,9 +9,9 @@
 
 from datetime import datetime, timezone
 
-import programmingtheiot.common.ConfigConst as ConfigConst
+import src.main.python.programmingtheiot.common.ConfigConst as ConfigConst
 
-from programmingtheiot.common.ConfigUtil import ConfigUtil
+from src.main.python.programmingtheiot.common.ConfigUtil import ConfigUtil
 
 class BaseIotData(object):
 	"""

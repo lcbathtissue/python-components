@@ -7,9 +7,9 @@
 # and designed to be modified by the student as needed.
 #
 
-import programmingtheiot.common.ConfigConst as ConfigConst
+import src.main.python.programmingtheiot.common.ConfigConst as ConfigConst
 
-from programmingtheiot.data.BaseIotData import BaseIotData
+from src.main.python.programmingtheiot.data.BaseIotData import BaseIotData
 
 class SensorData(BaseIotData):
 	"""
