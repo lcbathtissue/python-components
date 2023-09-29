@@ -10,9 +10,9 @@
 import logging
 import unittest
 
-import programmingtheiot.common.ConfigConst as ConfigConst
+import src.main.python.programmingtheiot.common.ConfigConst as ConfigConst
 
-from programmingtheiot.cda.sim.TemperatureSensorSimTask import TemperatureSensorSimTask
+from src.main.python.programmingtheiot.cda.sim.TemperatureSensorSimTask import TemperatureSensorSimTask
 
 class TemperatureSensorSimTaskTest(unittest.TestCase):
 	"""

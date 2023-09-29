@@ -11,65 +11,56 @@
 # 
 
 import logging
-from src.main.python.programmingtheiot.cda.system.SystemPerformanceManager import SystemPerformanceManager
-
 from time import sleep
+import src.main.python.programmingtheiot.common.ConfigConst as ConfigConst
+
+from src.main.python.programmingtheiot.cda.system.SystemPerformanceManager import SystemPerformanceManager
+from src.main.python.programmingtheiot.common.ConfigUtil import ConfigUtil
+from src.main.python.programmingtheiot.cda.app.DeviceDataManager import DeviceDataManager
 
 logging.basicConfig(format = '%(asctime)s:%(name)s:%(levelname)s:%(message)s', level = logging.DEBUG)
 
-class ConstrainedDeviceApp():
-	"""
-	Definition of the ConstrainedDeviceApp class.
-	
-	"""
 
+logging.basicConfig(format = '%(asctime)s:%(name)s:%(levelname)s:%(message)s', level = logging.DEBUG)
+
+
+class ConstrainedDeviceApp():
 	def __init__(self):
 		logging.info("Initializing CDA...")
 
-		self.sysPerfMgr = SystemPerformanceManager()
+		self.dataMgr = DeviceDataManager()
 
 	def startApp(self):
 		logging.info("Starting CDA...")
 
-		self.sysPerfMgr.startManager()
+		self.dataMgr.startManager()
 
 		logging.info("CDA started.")
 
 	def stopApp(self, code: int):
 		logging.info("CDA stopping...")
 
-		self.sysPerfMgr.stopManager()
+		self.dataMgr.stopManager()
 
 		logging.info("CDA stopped with exit code %s.", str(code))
-		
-	def parseArgs(self, args):
-		"""
-		Parse command line args.
-		
-		@param args The arguments to parse.
-		"""
-		logging.info("Parsing command line args...")
 
 
 def main():
-	"""
-	Main function definition for running client as application.
-	
-	Current implementation runs for 35 seconds then exits.
-	"""
 	cda = ConstrainedDeviceApp()
 	cda.startApp()
-	
-	# run for 10 seconds - this can be changed as needed
-	sleep(10)
-	
-	# optionally stop the app - this can be removed if needed
-	cda.stopApp(0)
+
+	runForever = ConfigUtil().getBoolean(ConfigConst.CONSTRAINED_DEVICE, ConfigConst.RUN_FOREVER_KEY)
+
+	if runForever:
+		while (True):
+			sleep(5)
+
+	else:
+		# TODO: Make the '65' value configurable
+		sleep(65)
+		cda.stopApp(0)
+
 
 if __name__ == '__main__':
-	"""
-	Attribute definition for when invoking as app via command line
-	
-	"""
 	main()
 	

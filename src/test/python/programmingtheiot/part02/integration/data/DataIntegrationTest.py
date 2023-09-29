@@ -11,16 +11,16 @@ import logging
 import os
 import unittest
 
-import programmingtheiot.common.ConfigConst as ConfigConst
+import src.main.python.programmingtheiot.common.ConfigConst as ConfigConst
 
 from pathlib import Path
 
-from programmingtheiot.common.ConfigUtil import ConfigUtil
-from programmingtheiot.data.DataUtil import DataUtil
+from src.main.python.programmingtheiot.common.ConfigUtil import ConfigUtil
+from src.main.python.programmingtheiot.data.DataUtil import DataUtil
 
-from programmingtheiot.data.ActuatorData import ActuatorData
-from programmingtheiot.data.SensorData import SensorData
-from programmingtheiot.data.SystemPerformanceData import SystemPerformanceData
+from src.main.python.programmingtheiot.data.ActuatorData import ActuatorData
+from src.main.python.programmingtheiot.data.SensorData import SensorData
+from src.main.python.programmingtheiot.data.SystemPerformanceData import SystemPerformanceData
 
 class DataIntegrationTest(unittest.TestCase):
 	"""

@@ -10,7 +10,7 @@
 import logging
 import unittest
 
-from programmingtheiot.cda.system.SystemCpuUtilTask import SystemCpuUtilTask
+from src.main.python.programmingtheiot.cda.system.SystemCpuUtilTask import SystemCpuUtilTask
 
 class SystemCpuUtilTaskTest(unittest.TestCase):
 	"""

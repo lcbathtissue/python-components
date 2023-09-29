@@ -12,10 +12,10 @@ import unittest
 
 from time import sleep
 
-import programmingtheiot.common.ConfigConst as ConfigConst
+import src.main.python.programmingtheiot.common.ConfigConst as ConfigConst
 
-from programmingtheiot.data.ActuatorData import ActuatorData
-from programmingtheiot.cda.emulated.HvacEmulatorTask import HvacEmulatorTask
+from src.main.python.programmingtheiot.data.ActuatorData import ActuatorData
+from src.main.python.programmingtheiot.cda.emulated.HvacEmulatorTask import HvacEmulatorTask
 
 class HvacEmulatorTaskTest(unittest.TestCase):
 	"""

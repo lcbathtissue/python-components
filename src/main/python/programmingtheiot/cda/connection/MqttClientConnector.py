@@ -10,13 +10,13 @@
 import logging
 import paho.mqtt.client as mqttClient
 
-import programmingtheiot.common.ConfigConst as ConfigConst
+import src.main.python.programmingtheiot.common.ConfigConst as ConfigConst
 
-from programmingtheiot.common.ConfigUtil import ConfigUtil
-from programmingtheiot.common.IDataMessageListener import IDataMessageListener
-from programmingtheiot.common.ResourceNameEnum import ResourceNameEnum
+from src.main.python.programmingtheiot.common.ConfigUtil import ConfigUtil
+from src.main.python.programmingtheiot.common.IDataMessageListener import IDataMessageListener
+from src.main.python.programmingtheiot.common.ResourceNameEnum import ResourceNameEnum
 
-from programmingtheiot.cda.connection.IPubSubClient import IPubSubClient
+from src.main.python.programmingtheiot.cda.connection.IPubSubClient import IPubSubClient
 
 class MqttClientConnector(IPubSubClient):
 	"""

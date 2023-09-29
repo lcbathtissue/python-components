@@ -16,24 +16,47 @@ class SensorData(BaseIotData):
 	Shell representation of class for student implementation.
 	
 	"""
-		
-	def __init__(self, typeID: int = ConfigConst.DEFAULT_SENSOR_TYPE, name = ConfigConst.NOT_SET, d = None):
-		super(SensorData, self).__init__(name = name, typeID = typeID, d = d)
-		pass
-	
-	def getSensorType(self) -> int:
-		"""
-		Returns the sensor type to the caller.
-		
-		@return int
-		"""
-		return self.sensorType
-	
+
+	def __init__(self, typeID: int = ConfigConst.DEFAULT_ACTUATOR_TYPE, name=ConfigConst.NOT_SET, d=None):
+		super(ActuatorData, self).__init__(name=name, typeID=typeID, d=d)
+
+		self.value = ConfigConst.DEFAULT_VAL
+		self.command = ConfigConst.DEFAULT_COMMAND
+		self.stateData = ""
+		self.isResponse = False
+
+	def getCommand(self) -> int:
+		return self.command
+
+	def getStateData(self) -> str:
+		return self.stateData
+
 	def getValue(self) -> float:
-		pass
-	
-	def setValue(self, newVal: float):
-		pass
-		
+		return self.value
+
+	def isResponseFlagEnabled(self) -> bool:
+		return self.isResponse
+
+	def setCommand(self, command: int):
+		self.command = command
+		self.updateTimeStamp()
+
+	def setAsResponse(self):
+		self.isResponse = True
+		self.updateTimeStamp()
+
+	def setStateData(self, stateData: str):
+		if stateData:
+			self.stateData = stateData
+			self.updateTimeStamp()
+
+	def setValue(self, val: float):
+		self.value = val
+		self.updateTimeStamp()
+
 	def _handleUpdateData(self, data):
-		pass
+		if data and isinstance(data, ActuatorData):
+			self.command = data.getCommand()
+			self.stateData = data.getStateData()
+			self.value = data.getValue()
+			self.isResponse = data.isResponseFlagEnabled()

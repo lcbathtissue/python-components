@@ -10,7 +10,7 @@
 import logging
 import unittest
 
-from programmingtheiot.cda.sim.PressureSensorSimTask import PressureSensorSimTask
+from src.main.python.programmingtheiot.cda.sim.PressureSensorSimTask import PressureSensorSimTask
 
 class PressureSensorSimTaskTest(unittest.TestCase):
 	"""

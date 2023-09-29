@@ -15,20 +15,20 @@ from apscheduler.schedulers.background import BackgroundScheduler
 
 from time import sleep
 
-import programmingtheiot.common.ConfigConst as ConfigConst
+import src.main.python.programmingtheiot.common.ConfigConst as ConfigConst
 
-from programmingtheiot.common.ConfigUtil import ConfigUtil
-from programmingtheiot.common.DefaultDataMessageListener import DefaultDataMessageListener
-from programmingtheiot.common.ResourceNameEnum import ResourceNameEnum
+from src.main.python.programmingtheiot.common.ConfigUtil import ConfigUtil
+from src.main.python.programmingtheiot.common.DefaultDataMessageListener import DefaultDataMessageListener
+from src.main.python.programmingtheiot.common.ResourceNameEnum import ResourceNameEnum
 
-from programmingtheiot.cda.connection.CoapClientConnector import CoapClientConnector
-from programmingtheiot.cda.connection.CoapServerAdapter import CoapServerAdapter
+from src.main.python.programmingtheiot.cda.connection.CoapClientConnector import CoapClientConnector
+from src.main.python.programmingtheiot.cda.connection.CoapServerAdapter import CoapServerAdapter
 
-from programmingtheiot.cda.connection.handlers.GetSystemPerformanceResourceHandler import GetSystemPerformanceResourceHandler
-from programmingtheiot.cda.connection.handlers.GetTelemetryResourceHandler import GetTelemetryResourceHandler
+from src.main.python.programmingtheiot.cda.connection.handlers.GetSystemPerformanceResourceHandler import GetSystemPerformanceResourceHandler
+from src.main.python.programmingtheiot.cda.connection.handlers.GetTelemetryResourceHandler import GetTelemetryResourceHandler
 
-from programmingtheiot.data.SystemPerformanceData import SystemPerformanceData
-from programmingtheiot.data.SensorData import SensorData
+from src.main.python.programmingtheiot.data.SystemPerformanceData import SystemPerformanceData
+from src.main.python.programmingtheiot.data.SensorData import SensorData
 
 class CoapServerAdapterTest(unittest.TestCase):
 	"""

@@ -12,14 +12,14 @@ import unittest
 
 from time import sleep
 
-import programmingtheiot.common.ConfigConst as ConfigConst
+import src.main.python.programmingtheiot.common.ConfigConst as ConfigConst
 
-from programmingtheiot.cda.app.DeviceDataManager import DeviceDataManager
-from programmingtheiot.cda.connection.MqttClientConnector import MqttClientConnector
+from src.main.python.programmingtheiot.cda.app.DeviceDataManager import DeviceDataManager
+from src.main.python.programmingtheiot.cda.connection.MqttClientConnector import MqttClientConnector
 
-from programmingtheiot.common.ResourceNameEnum import ResourceNameEnum
-from programmingtheiot.data.DataUtil import DataUtil
-from programmingtheiot.data.ActuatorData import ActuatorData
+from src.main.python.programmingtheiot.common.ResourceNameEnum import ResourceNameEnum
+from src.main.python.programmingtheiot.data.DataUtil import DataUtil
+from src.main.python.programmingtheiot.data.ActuatorData import ActuatorData
 
 class DeviceDataManagerWithMqttClientOnlyTest(unittest.TestCase):
 	"""

@@ -9,9 +9,9 @@
 
 from json import JSONEncoder
 
-from programmingtheiot.data.ActuatorData import ActuatorData
-from programmingtheiot.data.SensorData import SensorData
-from programmingtheiot.data.SystemPerformanceData import SystemPerformanceData
+from src.main.python.programmingtheiot.data.ActuatorData import ActuatorData
+from src.main.python.programmingtheiot.data.SensorData import SensorData
+from src.main.python.programmingtheiot.data.SystemPerformanceData import SystemPerformanceData
 
 class DataUtil():
 	"""

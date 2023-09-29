@@ -10,7 +10,7 @@
 import logging
 import unittest
 
-from programmingtheiot.cda.system.SystemMemUtilTask import SystemMemUtilTask
+from src.main.python.programmingtheiot.cda.system.SystemMemUtilTask import SystemMemUtilTask
 
 class SystemMemUtilTaskTest(unittest.TestCase):
 	"""

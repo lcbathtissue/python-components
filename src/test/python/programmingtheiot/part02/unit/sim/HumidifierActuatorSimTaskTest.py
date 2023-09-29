@@ -10,10 +10,10 @@
 import logging
 import unittest
 
-import programmingtheiot.common.ConfigConst as ConfigConst
+import src.main.python.programmingtheiot.common.ConfigConst as ConfigConst
 
-from programmingtheiot.data.ActuatorData import ActuatorData
-from programmingtheiot.cda.sim.HumidifierActuatorSimTask import HumidifierActuatorSimTask
+from src.main.python.programmingtheiot.data.ActuatorData import ActuatorData
+from src.main.python.programmingtheiot.cda.sim.HumidifierActuatorSimTask import HumidifierActuatorSimTask
 
 class HumidifierActuatorSimTaskTest(unittest.TestCase):
 	"""

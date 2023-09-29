@@ -9,10 +9,10 @@
 
 import logging
 
-from programmingtheiot.common.IDataMessageListener import IDataMessageListener
+from src.main.python.programmingtheiot.common.IDataMessageListener import IDataMessageListener
 
-from programmingtheiot.data.DataUtil import DataUtil
-from programmingtheiot.data.ActuatorData import ActuatorData
+from src.main.python.programmingtheiot.data.DataUtil import DataUtil
+from src.main.python.programmingtheiot.data.ActuatorData import ActuatorData
 
 class UpdateActuatorResourceHandler():
 	"""

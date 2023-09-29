@@ -10,14 +10,14 @@
 import logging
 import socket
 
-import programmingtheiot.common.ConfigConst as ConfigConst
+import src.main.python.programmingtheiot.common.ConfigConst as ConfigConst
 
-from programmingtheiot.common.ConfigUtil import ConfigUtil
+from src.main.python.programmingtheiot.common.ConfigUtil import ConfigUtil
 
-from programmingtheiot.common.ResourceNameEnum import ResourceNameEnum
+from src.main.python.programmingtheiot.common.ResourceNameEnum import ResourceNameEnum
 
-from programmingtheiot.common.IDataMessageListener import IDataMessageListener
-from programmingtheiot.cda.connection.IRequestResponseClient import IRequestResponseClient
+from src.main.python.programmingtheiot.common.IDataMessageListener import IDataMessageListener
+from src.main.python.programmingtheiot.cda.connection.IRequestResponseClient import IRequestResponseClient
 
 class CoapClientConnector(IRequestResponseClient):
 	"""

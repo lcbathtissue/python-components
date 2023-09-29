@@ -12,8 +12,8 @@ import unittest
 
 from time import sleep
 
-from programmingtheiot.cda.system.SystemPerformanceManager import SystemPerformanceManager
-from programmingtheiot.common.DefaultDataMessageListener import DefaultDataMessageListener
+from src.main.python.programmingtheiot.cda.system.SystemPerformanceManager import SystemPerformanceManager
+from src.main.python.programmingtheiot.common.DefaultDataMessageListener import DefaultDataMessageListener
 
 class SystemPerformanceManagerTest(unittest.TestCase):
 	"""

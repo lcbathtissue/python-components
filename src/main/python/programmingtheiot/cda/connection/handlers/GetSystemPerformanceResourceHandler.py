@@ -9,13 +9,13 @@
 
 import logging
 
-import programmingtheiot.common.ConfigConst as ConfigConst
+import src.main.python.programmingtheiot.common.ConfigConst as ConfigConst
 
-from programmingtheiot.common.ConfigUtil import ConfigUtil
-from programmingtheiot.common.ITelemetryDataListener import ITelemetryDataListener
+from src.main.python.programmingtheiot.common.ConfigUtil import ConfigUtil
+from src.main.python.programmingtheiot.common.ITelemetryDataListener import ITelemetryDataListener
 
-from programmingtheiot.data.DataUtil import DataUtil
-from programmingtheiot.data.SystemPerformanceData import SystemPerformanceData
+from src.main.python.programmingtheiot.data.DataUtil import DataUtil
+from src.main.python.programmingtheiot.data.SystemPerformanceData import SystemPerformanceData
 
 class GetSystemPerformanceResourceHandler(ITelemetryDataListener):
 	"""

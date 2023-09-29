@@ -12,10 +12,10 @@ import unittest
 
 from time import sleep
 
-import programmingtheiot.common.ConfigConst as ConfigConst
+import src.main.python.programmingtheiot.common.ConfigConst as ConfigConst
 
-from programmingtheiot.data.SensorData import SensorData
-from programmingtheiot.cda.emulated.TemperatureSensorEmulatorTask import TemperatureSensorEmulatorTask
+from src.main.python.programmingtheiot.data.SensorData import SensorData
+from src.main.python.programmingtheiot.cda.emulated.TemperatureSensorEmulatorTask import TemperatureSensorEmulatorTask
 
 class TemperatureEmulatorTaskTest(unittest.TestCase):
 	"""

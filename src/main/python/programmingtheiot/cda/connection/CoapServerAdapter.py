@@ -15,15 +15,15 @@ from time import sleep
 from coapthon.server.coap import CoAP
 from coapthon.resources.resource import Resource
 
-import programmingtheiot.common.ConfigConst as ConfigConst
+import src.main.python.programmingtheiot.common.ConfigConst as ConfigConst
 
-from programmingtheiot.common.ConfigUtil import ConfigUtil
-from programmingtheiot.common.ResourceNameEnum import ResourceNameEnum
+from src.main.python.programmingtheiot.common.ConfigUtil import ConfigUtil
+from src.main.python.programmingtheiot.common.ResourceNameEnum import ResourceNameEnum
 
-from programmingtheiot.common.IDataMessageListener import IDataMessageListener
-from programmingtheiot.cda.connection.handlers.GetTelemetryResourceHandler import GetTelemetryResourceHandler
-from programmingtheiot.cda.connection.handlers.UpdateActuatorResourceHandler import UpdateActuatorResourceHandler
-from programmingtheiot.cda.connection.handlers.GetSystemPerformanceResourceHandler import GetSystemPerformanceResourceHandler
+from src.main.python.programmingtheiot.common.IDataMessageListener import IDataMessageListener
+from src.main.python.programmingtheiot.cda.connection.handlers.GetTelemetryResourceHandler import GetTelemetryResourceHandler
+from src.main.python.programmingtheiot.cda.connection.handlers.UpdateActuatorResourceHandler import UpdateActuatorResourceHandler
+from src.main.python.programmingtheiot.cda.connection.handlers.GetSystemPerformanceResourceHandler import GetSystemPerformanceResourceHandler
 
 class CoapServerAdapter():
 	"""

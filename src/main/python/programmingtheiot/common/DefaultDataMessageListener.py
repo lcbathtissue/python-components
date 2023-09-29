@@ -9,13 +9,13 @@
 
 import logging
 
-from programmingtheiot.common.ResourceNameEnum import ResourceNameEnum
-from programmingtheiot.common.IDataMessageListener import IDataMessageListener
-from programmingtheiot.data.ActuatorData import ActuatorData
-from programmingtheiot.data.SensorData import SensorData
-from programmingtheiot.data.SystemPerformanceData import SystemPerformanceData
-from programmingtheiot.common.ITelemetryDataListener import ITelemetryDataListener
-from programmingtheiot.common.ISystemPerformanceDataListener import ISystemPerformanceDataListener
+from src.main.python.programmingtheiot.common.ResourceNameEnum import ResourceNameEnum
+from src.main.python.programmingtheiot.common.IDataMessageListener import IDataMessageListener
+from src.main.python.programmingtheiot.data.ActuatorData import ActuatorData
+from src.main.python.programmingtheiot.data.SensorData import SensorData
+from src.main.python.programmingtheiot.data.SystemPerformanceData import SystemPerformanceData
+from src.main.python.programmingtheiot.common.ITelemetryDataListener import ITelemetryDataListener
+from src.main.python.programmingtheiot.common.ISystemPerformanceDataListener import ISystemPerformanceDataListener
 
 class DefaultDataMessageListener(IDataMessageListener):
 	"""

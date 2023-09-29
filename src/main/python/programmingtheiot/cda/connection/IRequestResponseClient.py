@@ -7,10 +7,10 @@
 # Copyright (c) 2020 by Andrew D. King
 # 
 
-import programmingtheiot.common.ConfigConst as ConfigConst
+import src.main.python.programmingtheiot.common.ConfigConst as ConfigConst
 
-from programmingtheiot.common.ResourceNameEnum import ResourceNameEnum
-from programmingtheiot.common.IDataMessageListener import IDataMessageListener
+from src.main.python.programmingtheiot.common.ResourceNameEnum import ResourceNameEnum
+from src.main.python.programmingtheiot.common.IDataMessageListener import IDataMessageListener
 
 class IRequestResponseClient():
 	"""

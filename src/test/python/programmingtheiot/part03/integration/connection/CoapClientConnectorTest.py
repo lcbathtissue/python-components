@@ -12,16 +12,16 @@ import unittest
 
 from time import sleep
 
-import programmingtheiot.common.ConfigConst as ConfigConst
+import src.main.python.programmingtheiot.common.ConfigConst as ConfigConst
 
-from programmingtheiot.common.ConfigUtil import ConfigUtil
-from programmingtheiot.common.DefaultDataMessageListener import DefaultDataMessageListener
-from programmingtheiot.common.ResourceNameEnum import ResourceNameEnum
+from src.main.python.programmingtheiot.common.ConfigUtil import ConfigUtil
+from src.main.python.programmingtheiot.common.DefaultDataMessageListener import DefaultDataMessageListener
+from src.main.python.programmingtheiot.common.ResourceNameEnum import ResourceNameEnum
 
-from programmingtheiot.cda.connection.CoapClientConnector import CoapClientConnector
+from src.main.python.programmingtheiot.cda.connection.CoapClientConnector import CoapClientConnector
 
-from programmingtheiot.data.DataUtil import DataUtil
-from programmingtheiot.data.SensorData import SensorData
+from src.main.python.programmingtheiot.data.DataUtil import DataUtil
+from src.main.python.programmingtheiot.data.SensorData import SensorData
 
 class CoapClientConnectorTest(unittest.TestCase):
 	"""

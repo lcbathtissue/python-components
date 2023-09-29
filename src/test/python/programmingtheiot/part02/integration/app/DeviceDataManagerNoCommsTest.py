@@ -12,7 +12,7 @@ import unittest
 
 from time import sleep
 
-from programmingtheiot.cda.app.DeviceDataManager import DeviceDataManager
+from src.main.python.programmingtheiot.cda.app.DeviceDataManager import DeviceDataManager
 
 class DeviceDataManagerNoCommsTest(unittest.TestCase):
 	"""

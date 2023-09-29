@@ -12,12 +12,12 @@ import unittest
 
 from time import sleep
 
-import programmingtheiot.common.ConfigConst as ConfigConst
+import src.main.python.programmingtheiot.common.ConfigConst as ConfigConst
 
-from programmingtheiot.cda.system.ActuatorAdapterManager import ActuatorAdapterManager
-from programmingtheiot.common.DefaultDataMessageListener import DefaultDataMessageListener
+from src.main.python.programmingtheiot.cda.system.ActuatorAdapterManager import ActuatorAdapterManager
+from src.main.python.programmingtheiot.common.DefaultDataMessageListener import DefaultDataMessageListener
 
-from programmingtheiot.data.ActuatorData import ActuatorData
+from src.main.python.programmingtheiot.data.ActuatorData import ActuatorData
 
 class ActuatorEmulatorManagerTest(unittest.TestCase):
 	"""

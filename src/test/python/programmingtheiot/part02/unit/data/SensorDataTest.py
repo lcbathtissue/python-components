@@ -10,9 +10,9 @@
 import logging
 import unittest
 
-import programmingtheiot.common.ConfigConst as ConfigConst
+import src.main.python.programmingtheiot.common.ConfigConst as ConfigConst
 
-from programmingtheiot.data.SensorData import SensorData
+from src.main.python.programmingtheiot.data.SensorData import SensorData
 
 class SensorDataTest(unittest.TestCase):
 	"""

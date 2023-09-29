@@ -12,12 +12,12 @@ import unittest
 
 import time
 
-from programmingtheiot.cda.connection.MqttClientConnector import MqttClientConnector
+from src.main.python.programmingtheiot.cda.connection.MqttClientConnector import MqttClientConnector
 
-from programmingtheiot.common.ResourceNameEnum import ResourceNameEnum
+from src.main.python.programmingtheiot.common.ResourceNameEnum import ResourceNameEnum
 
-from programmingtheiot.data.DataUtil import DataUtil
-from programmingtheiot.data.SensorData import SensorData
+from src.main.python.programmingtheiot.data.DataUtil import DataUtil
+from src.main.python.programmingtheiot.data.SensorData import SensorData
 
 class MqttClientConnectorTest(unittest.TestCase):
 	"""
