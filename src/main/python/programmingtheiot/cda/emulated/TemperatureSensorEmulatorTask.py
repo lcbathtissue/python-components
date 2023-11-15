@@ -7,12 +7,12 @@
 # and designed to be modified by the student as needed.
 #
 
-from programmingtheiot.data.SensorData import SensorData
+from src.main.python.programmingtheiot.data.SensorData import SensorData
 
-import programmingtheiot.common.ConfigConst as ConfigConst
+import src.main.python.programmingtheiot.common.ConfigConst as ConfigConst
 
-from programmingtheiot.common.ConfigUtil import ConfigUtil
-from programmingtheiot.cda.sim.BaseSensorSimTask import BaseSensorSimTask
+from src.main.python.programmingtheiot.common.ConfigUtil import ConfigUtil
+from src.main.python.programmingtheiot.cda.sim.BaseSensorSimTask import BaseSensorSimTask
 
 from pisense import SenseHAT
 

@@ -11,10 +11,10 @@ import logging
 
 from time import sleep
 
-import programmingtheiot.common.ConfigConst as ConfigConst
+import src.main.python.programmingtheiot.common.ConfigConst as ConfigConst
 
-from programmingtheiot.common.ConfigUtil import ConfigUtil
-from programmingtheiot.cda.sim.BaseActuatorSimTask import BaseActuatorSimTask
+from src.main.python.programmingtheiot.common.ConfigUtil import ConfigUtil
+from src.main.python.programmingtheiot.cda.sim.BaseActuatorSimTask import BaseActuatorSimTask
 
 from pisense import SenseHAT
 

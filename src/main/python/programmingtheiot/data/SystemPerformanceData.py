@@ -8,13 +8,12 @@
 #
 
 import src.main.python.programmingtheiot.common.ConfigConst as ConfigConst
-
 from src.main.python.programmingtheiot.data.BaseIotData import BaseIotData
 
 class SystemPerformanceData(BaseIotData):
 	"""
 	Shell representation of class for student implementation.
-	
+
 	"""
 	DEFAULT_VAL = 0.0
 
