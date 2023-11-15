@@ -89,8 +89,8 @@ class IRequestResponseClient():
 		@return bool True on success (if listener is non-null will always be the case); False otherwise.
 		"""
 		pass
-
-	def startObserver(self, resource: ResourceNameEnum = None, name: str = None, ttl: int = ConfigConst.DEFAULT_TTL) -> bool:
+	# def startObserver(self, resource: ResourceNameEnum = None, name: str = None, ttl: int = ConfigConst.DEFAULT_TTL) -> bool:
+	def startObserver(self, resource: ResourceNameEnum = None, name: str = None) -> bool:
 		"""
 		Connects to the server and sends a discovery request to the server.
 		IDataMessageListener callback must be set to receive response.
