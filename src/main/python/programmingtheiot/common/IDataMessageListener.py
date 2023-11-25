@@ -5,7 +5,8 @@
 # found in the LICENSE file at the top level of this repository.
 # 
 # Copyright (c) 2020 by Andrew D. King
-# 
+#
+import logging
 
 from src.main.python.programmingtheiot.common.ResourceNameEnum import ResourceNameEnum
 
@@ -47,16 +48,16 @@ class IDataMessageListener():
 		@return SystemPerformanceData
 		"""
 		pass
-	
+
 	def handleActuatorCommandMessage(self, data: ActuatorData) -> ActuatorData:
-		"""
-		Callback function to handle an actuator command message packaged as a ActuatorData object.
-		
-		@param data The ActuatorData message received.
-		@return ActuatorData An ActuatorData message that contains the same content as 'data',
-		but with the response flag set to True.
-		"""
-		pass
+		if data:
+			logging.info("Processing actuator command message.")
+
+			# TODO: add further validation before sending the command
+			return self.actuatorAdapterMgr.sendActuatorCommand(data)
+		else:
+			logging.warning("Received invalid ActuatorData command message. Ignoring.")
+			return None
 	
 	def handleActuatorCommandResponse(self, data: ActuatorData) -> bool:
 		"""
